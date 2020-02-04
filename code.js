@@ -8,18 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
         while (numOfBottles > 0) {
             let message = numOfBottles + " bottles of beer on the wall, " +
-            numOfBottles + " bottles of beer, " + 
-            "take one down, pass it around, \n";
+            numOfBottles + " bottles of beer, " +
+            "take one down, pass it around, ";
             numOfBottles = (numOfBottles - 1);
-            message = message.concat(numOfBottles + 
+            message = message.concat(numOfBottles +
             " bottles of beer on the wall!");
-            let p = document.createElement("P")
+            let p = document.createElement("P");
             let pText = document.createTextNode(message);
             p.appendChild(pText);
             main.appendChild(p);
         }
 
-    };
+    }
 
     runProgram();
 
